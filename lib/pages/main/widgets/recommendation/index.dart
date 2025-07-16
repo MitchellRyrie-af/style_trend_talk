@@ -427,7 +427,7 @@ class _RecommendItemDetailsState extends State<RecommendItemDetails> {
 }
 
 class _IconNum extends StatelessWidget {
-  const _IconNum({super.key, required this.icon, required this.nums});
+  const _IconNum({required this.icon, required this.nums});
   final IconData? icon;
   final String nums;
 
@@ -454,7 +454,7 @@ class _IconNum extends StatelessWidget {
 }
 
 class _ImgCircles extends StatelessWidget {
-  const _ImgCircles({super.key, required this.left, required this.imgPath});
+  const _ImgCircles({required this.left, required this.imgPath});
   final double? left;
   final String imgPath;
 

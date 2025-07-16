@@ -125,7 +125,7 @@ class CommentAlign extends StatelessWidget {
               ),
               const SizedBox(width: 16),
               Expanded(
-                  child: Container(
+                  child: SizedBox(
                 height: 40,
                 child: const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,

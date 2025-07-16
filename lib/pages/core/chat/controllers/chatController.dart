@@ -28,7 +28,7 @@ class ChartController extends GetxController {
     try {
       // 调用你的API获取数据，这里使用假数据 discoverItems 代替
       List<ChartModel> newList = await getChartList(1, 10);
-      print('开始调用  objects: ----> ${newList} ');
+      print('开始调用  objects: ----> $newList ');
 
       // 将新的数据添加到之前的数组中
       chartList.addAll(newList);
@@ -42,15 +42,9 @@ class ChartController extends GetxController {
   }
 
   @override
-  void onReady() {
-    super.onReady();
-    // _initData();
-  }
-
-  @override
   void onClose() {
     chartList = RxList<ChartModel>([]);
-    print('objects: ----> ${chartList} ');
+    print('objects: ----> $chartList ');
     super.onClose();
   }
 }

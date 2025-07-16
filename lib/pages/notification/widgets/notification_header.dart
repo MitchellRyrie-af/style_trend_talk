@@ -3,7 +3,6 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 // import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:style_trend_talk/pages/index.dart';
-import 'package:style_trend_talk/pages/main/controllers/controller.dart';
 
 class NotificationAppHeader extends StatefulWidget {
   const NotificationAppHeader({

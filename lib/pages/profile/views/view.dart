@@ -33,7 +33,7 @@ class ProfilePage extends GetView<ProfileController> {
 
   // 主视图
   Widget _buildView() {
-    return ProfileContainerWidget();
+    return const ProfileContainerWidget();
   }
 
   @override
@@ -224,7 +224,7 @@ class MySliverTabBarHeaderDelegate extends SliverPersistentHeaderDelegate {
           fontWeight: FontWeight.bold,
         ),
         onTap: (index) {
-          print('object---${index}');
+          print('object---$index');
           // 切换tab
         },
         physics: const BouncingScrollPhysics(),

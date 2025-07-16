@@ -64,7 +64,7 @@ class LoginPage extends GetView<LoginController> {
               height: 30,
             ),
             Expanded(
-                child: Container(
+                child: SizedBox(
               width: loginBgWidth,
               child: _loginController(context, loginBtnWidth),
             )),
@@ -78,7 +78,7 @@ class LoginPage extends GetView<LoginController> {
                   height: 16,
                   width: 16,
                   child: Checkbox(
-                      shape: CircleBorder(),
+                      shape: const CircleBorder(),
                       value: loginController.isAgreed.value,
                       onChanged: (value) {
                         loginController.onCheckboxChanged(value ?? false);
@@ -91,8 +91,7 @@ class LoginPage extends GetView<LoginController> {
                 const Text(
                   '我已阅读并同意 用户协议 和 隐私政策',
                   style: TextStyle(
-                      fontSize: 12,
-                      color: const Color.fromARGB(255, 171, 171, 171)),
+                      fontSize: 12, color: Color.fromARGB(255, 171, 171, 171)),
                 ),
               ],
             )
@@ -145,7 +144,7 @@ class LoginPage extends GetView<LoginController> {
                 width: 46,
                 height: 50,
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 236, 236, 236),
+                  color: const Color.fromARGB(255, 236, 236, 236),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Icon(

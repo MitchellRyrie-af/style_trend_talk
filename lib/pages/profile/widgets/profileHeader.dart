@@ -291,7 +291,7 @@ class MyProfileHeaderState extends State<MyProfileHeader>
     return Positioned(
         right: 10,
         bottom: starBottomHeight,
-        child: Container(
+        child: SizedBox(
           width: 170,
           height: 50,
           child: Row(
@@ -300,11 +300,11 @@ class MyProfileHeaderState extends State<MyProfileHeader>
         ));
   }
 
-  Container _startOrFlow() {
-    return Container(
+  SizedBox _startOrFlow() {
+    return const SizedBox(
       width: 170,
       height: 50,
-      child: const Row(
+      child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Column(

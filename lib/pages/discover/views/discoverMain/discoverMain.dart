@@ -215,7 +215,7 @@ class DiscoverControllerWidget extends StatelessWidget {
           borderRadius: BorderRadius.only(
               topLeft: Radius.circular(24.0), topRight: Radius.circular(24.0))),
       builder: (BuildContext context) {
-        return Container(
+        return SizedBox(
           height: sheetCommentHeight,
           width: sheetWidth,
           child: Column(
